@@ -4,19 +4,22 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "cross-env INNGEST_DEV=1 tsx watch src/index.ts",
     "start": "tsx src/index.ts",
     "inngest": "npx inngest-cli@latest dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "shk0Abdullah",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^26.1.1",
+    "express": "^4.22.2",
     "inngest": "^4.12.1"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "tsx": "^4.23.0",
     "typescript": "^7.0.2"
   }
